@@ -28,16 +28,49 @@
         <!-- Border Definition End -->
         
         <!-- Header Definition Start -->
-        <Rectangle Grid.Column="1" Grid.Row="1" Fill="LightBlue"/>
-        <TextBlock Grid.Column="1" 
+        <Rectangle Grid.Column="0" 
+                   Grid.ColumnSpan="3"
+                   Grid.Row="1" 
+                   Fill="LightBlue"/>
+        
+        <TextBlock x:Name="Title"
+                   Grid.Column="1" 
                    Grid.Row="1" 
                    Text="Quick Clean" 
                    FontSize="25" 
                    HorizontalAlignment="Left" 
                    VerticalAlignment="Top" Margin="5" 
                    Foreground="White"
-                   FontFamily="Comic sans ms"/>
+                   FontFamily="Arial Nova"/>
 
+        <TextBlock 
+                   x:Name="Action"
+                   Grid.Column="1" 
+                   Grid.Row="1"
+                   Text="A Scan is Required"
+                   FontSize="20"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Bottom"
+                   Height="50"
+                   Margin="5,5,1,5"
+                   Foreground="White"
+                   FontFamily="Arial nova"
+                   FontWeight="Bold"/>
+
+        <TextBlock x:Name="ToClean"
+                   Grid.Column="1"
+                   Grid.Row="1"
+                   Text="Files to clean:"
+                   FontSize="15"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Bottom"
+                   Height="25"
+                   Margin="5,5,1,5"
+                   Foreground="White"
+                   FontFamily="Arial nova"
+                   FontWeight="Bold"/>
+                    
+        <!-- Header Definition End -->
 
     </Grid>
 </Window>
