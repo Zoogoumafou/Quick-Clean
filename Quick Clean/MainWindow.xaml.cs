@@ -24,5 +24,10 @@ namespace Quick_Clean
         {
             InitializeComponent();
         }
+
+        private void ScanButton_Click(object sender, RoutedEventArgs e)
+        {
+           
+        }
     }
 }
