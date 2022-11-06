@@ -10,6 +10,9 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20"/>
             <ColumnDefinition Width="*"/>
+            <ColumnDefinition MinWidth="100"
+                              Width="200"
+                              MaxWidth="200"/>
             <ColumnDefinition Width="20"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
@@ -28,7 +31,6 @@
         <!-- Border Definition End -->
         
         <!-- Header Definition Start -->
-        
         <Rectangle Grid.Column="0" 
                    Grid.ColumnSpan="4"
                    Grid.Row="1" 
@@ -70,18 +72,10 @@
                    Foreground="White"
                    FontFamily="Arial nova"
                    FontWeight="Bold"/>
-        <Grid Grid.Row="1"
-              Grid.Column="1">
-
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition MinWidth="100"
-                              Width="200"
-                              MaxWidth="200"/>
-            </Grid.ColumnDefinitions>
-            
-            <Button x:Name="ScanButton"
-                Grid.Column="1"
+        
+        <Button x:Name="ScanButton"
+                Grid.Column="2"
+                Grid.Row="1"
                 Content="Scan Now"
                 Width="Auto"
                 Height="Auto"
@@ -93,63 +87,7 @@
                 FontSize="25"
                 FontWeight="Bold"
                 BorderThickness="2"/>
-        </Grid>
-        
-      
         <!-- Header Definition End -->
 
-        <!-- Body Definition Start -->
-        <Grid Grid.Row="2"
-              Grid.Column="1">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-
-            <Grid.RowDefinitions>
-                <RowDefinition Height="20"
-                               MaxHeight="100"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="20"
-                               MaxHeight="100"/>
-            </Grid.RowDefinitions>
-            
-            <Button
-                Grid.Column="0"
-                Grid.Row="1"
-                Content="Scan Now"
-                Width="Auto"
-                Height="Auto"
-                Margin="15"
-                BorderBrush="LightGreen"
-                Background="LightGreen"
-                Foreground="White"
-                FontFamily="Arial Noval"
-                FontSize="25"
-                FontWeight="Bold"
-                BorderThickness="2"/>
-
-            <Button
-                Grid.Column="1"
-                Grid.Row="1"
-                Content="Scan Now"
-                Width="Auto"
-                Height="Auto"
-                Margin="15"
-                BorderBrush="LightGreen"
-                Background="LightGreen"
-                Foreground="White"
-                FontFamily="Arial Noval"
-                FontSize="25"
-                FontWeight="Bold"
-                BorderThickness="2"/>
-        </Grid>
-        
-        <!-- Body Definition End -->
-            <!-- Footer Definition Start-->
-        <Rectangle Grid.Column="1" 
-                   Grid.Row="3" 
-                   Fill="CornflowerBlue"/>
-        <!-- Footer Definition End -->
     </Grid>
 </Window>
